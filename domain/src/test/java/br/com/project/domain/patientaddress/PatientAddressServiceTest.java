@@ -19,7 +19,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 public class PatientAddressServiceTest {
- 
+
     @Mock
     private PatientAddressRepository repository;
     @InjectMocks
@@ -28,9 +28,9 @@ public class PatientAddressServiceTest {
 
     @Test
     public void shouldGetById() {
-        final var patientAddressEntityFromBd = PatientAddressEntity.create("string streetA5d2Y", "string numberjthi1", "string neighborhoodKSshu",
-            "string city2uaJS", "string stateewI11", "string country7Peux",
-            PatientEntity.create("string nameyaSWMG", LocalDate.now(), "string genderLxfhd"));
+        final var patientAddressEntityFromBd = PatientAddressEntity.create("string street3IY43", "string numberJH8ob", "string neighborhoodg29rJ",
+            "string cityNYROv", "string statedlHeN", "string countryvefag",
+            PatientEntity.create("string nameeZVFgc", LocalDate.now(), "string gendereJYs9"));
         when(repository.findById(any())).thenReturn(Optional.of(patientAddressEntityFromBd));
 
         final var result = service.findById("id");
@@ -42,9 +42,9 @@ public class PatientAddressServiceTest {
 
     @Test
     public void shouldGetByIds() {
-        final var patientAddressEntityFromBd = PatientAddressEntity.create("string streetooope", "string numberuBfHz", "string neighborhoodP7jFS",
-            "string cityKNcX8", "string statePxA4N", "string countryhl5zR",
-            PatientEntity.create("string nameH6iuMn", LocalDate.now(), "string genderJb0ej"));
+        final var patientAddressEntityFromBd = PatientAddressEntity.create("string streetM3pyr", "string numberAvaH5", "string neighborhoodJcjWB",
+            "string cityyrKhg", "string stateuY4t5", "string countryeEHXt",
+            PatientEntity.create("string namez1YqgR", LocalDate.now(), "string genderUlmU8"));
         when(repository.findAllById(any())).thenReturn(List.of(patientAddressEntityFromBd));
 
         final var resultList = service.findByIds(List.of("id"));
@@ -56,9 +56,9 @@ public class PatientAddressServiceTest {
 
     @Test
     public void shouldDelete() {
-        final var patientAddressEntityFromBd = PatientAddressEntity.create("string street9yrX6", "string numberiflSR", "string neighborhood6xXmJ",
-            "string cityMyHPR", "string stateLqS7f", "string countryFZnch",
-            PatientEntity.create("string name5YljAr", LocalDate.now(), "string genderjq1bS"));
+        final var patientAddressEntityFromBd = PatientAddressEntity.create("string street6lI6U", "string numberBX8Ws", "string neighborhoodYGq0t",
+            "string cityZvvqv", "string state5zVjO", "string countryqRsJ6",
+            PatientEntity.create("string name8SP0Gd", LocalDate.now(), "string gendervl5Hu"));
         when(repository.findById(any())).thenReturn(Optional.of(patientAddressEntityFromBd));
         doNothing().when(repository).delete(any(PatientAddressEntity.class));
 

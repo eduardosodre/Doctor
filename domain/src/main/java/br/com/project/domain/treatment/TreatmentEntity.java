@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Table(name = "treatment")
 public class TreatmentEntity extends AuditableEntity {
- 
+
     @Id
     @Column(columnDefinition = "VARCHAR(36)")
     private String id;

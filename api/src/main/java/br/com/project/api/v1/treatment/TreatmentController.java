@@ -31,7 +31,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TreatmentController {
 
     private final TreatmentService treatmentService;
-	
+
+
     @Operation(summary = "Find all Treatments")
     @ApiResponse(responseCode = "200", description = "Successfully retrieved Treatments",
         content = @Content(mediaType = "application/json", schema = @Schema(implementation = Page.class)))

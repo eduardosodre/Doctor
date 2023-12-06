@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class PatientPhoneEntityTest {
- 
+
     @Test
     void shouldCreateNewPatientPhoneEntity() {
-        final var expectedPhone = "string phoneM59hG";
-        final var expectedPatient = PatientEntity.create("string namempQyxH", LocalDate.now(), "string genderirE6o");
+        final var expectedPhone = "string phoneBBe33";
+        final var expectedPatient = PatientEntity.create("string name6z5Yo2", LocalDate.now(), "string gendersvH3J");
 
         final var actualPatientPhoneEntity = PatientPhoneEntity.create(expectedPhone, expectedPatient);
         Assertions.assertNotNull(actualPatientPhoneEntity);
@@ -25,11 +25,11 @@ public class PatientPhoneEntityTest {
 
     @Test
     void shouldCreateNewPatientPhoneEntityAndUpdate() {
-        final var expectedPhone = "string phone8xCXf";
-        final var expectedPatient = PatientEntity.create("string nameXvXQQg", LocalDate.now(), "string genderqmqVN");
+        final var expectedPhone = "string phone8UwHo";
+        final var expectedPatient = PatientEntity.create("string nameQSqzTk", LocalDate.now(), "string genderKCoXv");
 
-        final var actualPatientPhoneEntity = PatientPhoneEntity.create("string phoneaRCIG",
-            PatientEntity.create("string nameCs0DUE", LocalDate.now(), "string genderbTHCH"));
+        final var actualPatientPhoneEntity = PatientPhoneEntity.create("string phoneQu0S7",
+            PatientEntity.create("string namesrNwhl", LocalDate.now(), "string gender4cD91"));
         final var id = actualPatientPhoneEntity.getId();
 
         actualPatientPhoneEntity.update(expectedPhone);
@@ -47,9 +47,9 @@ public class PatientPhoneEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string idhpwOv";
-        final var expectedPhone = "string phoneUYKnq";
-        final var expectedPatient = PatientEntity.create("string nameHyOwcr", LocalDate.now(), "string genderfrWPx");
+        final var expectedId = "string idzPPxX";
+        final var expectedPhone = "string phonewkAZ1";
+        final var expectedPatient = PatientEntity.create("string nameTwbcmz", LocalDate.now(), "string genderNTFWQ");
 
         final var actualPatientPhoneEntity = PatientPhoneEntity.with(expectedId, expectedPhone, expectedPatient, expectedCreated, expectedUpdated,
             expectedDeleted);
@@ -67,9 +67,9 @@ public class PatientPhoneEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string idg80Rz";
-        final var expectedPhone = "string phoneWNMh6";
-        final var expectedPatient = PatientEntity.create("string nameokiRDV", LocalDate.now(), "string genderNOMSB");
+        final var expectedId = "string idPFymx";
+        final var expectedPhone = "string phone6Brzr";
+        final var expectedPatient = PatientEntity.create("string namegTMtJe", LocalDate.now(), "string genderdxmtA");
 
         final var actualPatientPhoneEntity = PatientPhoneEntity.with(expectedId, expectedPhone, expectedPatient, expectedCreated, expectedUpdated,
             expectedDeleted);
@@ -90,8 +90,8 @@ public class PatientPhoneEntityTest {
 
     @Test
     void shouldCreateNewPatientPhoneEntityAndDelete() {
-        final var expectedPhone = "string phoneVBpNI";
-        final var expectedPatient = PatientEntity.create("string name8L4RjY", LocalDate.now(), "string genderh2PdI");
+        final var expectedPhone = "string phoneVNsRj";
+        final var expectedPatient = PatientEntity.create("string name7X3C6w", LocalDate.now(), "string genderYlXl3");
 
         final var actualPatientPhoneEntity = PatientPhoneEntity.create(expectedPhone, expectedPatient);
         actualPatientPhoneEntity.delete();

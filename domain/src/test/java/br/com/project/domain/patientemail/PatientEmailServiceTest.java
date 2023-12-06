@@ -19,7 +19,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 public class PatientEmailServiceTest {
- 
+
     @Mock
     private PatientEmailRepository repository;
     @InjectMocks
@@ -28,8 +28,8 @@ public class PatientEmailServiceTest {
 
     @Test
     public void shouldGetById() {
-        final var patientEmailEntityFromBd = PatientEmailEntity.create("string emailP7Dk6",
-            PatientEntity.create("string name4i77EE", LocalDate.now(), "string genderRnCaK"));
+        final var patientEmailEntityFromBd = PatientEmailEntity.create("string email2xcoO",
+            PatientEntity.create("string namepsCzEU", LocalDate.now(), "string gendergraSO"));
         when(repository.findById(any())).thenReturn(Optional.of(patientEmailEntityFromBd));
 
         final var result = service.findById("id");
@@ -41,8 +41,8 @@ public class PatientEmailServiceTest {
 
     @Test
     public void shouldGetByIds() {
-        final var patientEmailEntityFromBd = PatientEmailEntity.create("string emailEyOKX",
-            PatientEntity.create("string nameOrqeIe", LocalDate.now(), "string gendereJFLf"));
+        final var patientEmailEntityFromBd = PatientEmailEntity.create("string emailiFBvE",
+            PatientEntity.create("string namekhnbc8", LocalDate.now(), "string genderOhDHG"));
         when(repository.findAllById(any())).thenReturn(List.of(patientEmailEntityFromBd));
 
         final var resultList = service.findByIds(List.of("id"));
@@ -54,8 +54,8 @@ public class PatientEmailServiceTest {
 
     @Test
     public void shouldDelete() {
-        final var patientEmailEntityFromBd = PatientEmailEntity.create("string emailP1Seb",
-            PatientEntity.create("string name5AJQU1", LocalDate.now(), "string genderz3BTv"));
+        final var patientEmailEntityFromBd = PatientEmailEntity.create("string emailmqeAK",
+            PatientEntity.create("string namedQZr5v", LocalDate.now(), "string genderMxlzh"));
         when(repository.findById(any())).thenReturn(Optional.of(patientEmailEntityFromBd));
         doNothing().when(repository).delete(any(PatientEmailEntity.class));
 

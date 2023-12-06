@@ -11,7 +11,7 @@ public class PatientAddressService {
 
     private static final String PATIENTADDRESS_NOT_FOUND = "PatientAddress not found";
     private final PatientAddressRepository repository;
- 
+
 
     public PatientAddressEntity findById(final String id) {
         return repository.findById(id).orElseThrow(() -> NotFoundException.create(PATIENTADDRESS_NOT_FOUND));

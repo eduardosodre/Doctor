@@ -1,7 +1,7 @@
 package br.com.project.api.v1.doctor;
 
 import br.com.project.domain.doctor.DoctorFilter;
-
+ 
 public record DoctorFilterRequest(String id,
                                   String crm,
                                   String name,

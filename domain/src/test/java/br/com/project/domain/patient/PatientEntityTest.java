@@ -10,12 +10,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 public class PatientEntityTest {
- 
+
     @Test
     void shouldCreateNewPatientEntity() {
-        final var expectedName = "string nameiStCFR";
+        final var expectedName = "string name6NEOMA";
         final var expectedBirthdate = LocalDate.now();
-        final var expectedGender = "string genderWzBds";
+        final var expectedGender = "string genderZHwnu";
 
         final var actualPatientEntity = PatientEntity.create(expectedName, expectedBirthdate, expectedGender);
         Assertions.assertNotNull(actualPatientEntity);
@@ -30,12 +30,12 @@ public class PatientEntityTest {
 
     @ParameterizedTest
     @CsvSource({
-        "TFxLu,name must be between 6 and 200 characters"
+        "DL1xt,name must be between 6 and 200 characters"
     })
     void shouldNotCreateNewPatientEntity(String name,
                                          String messageError) {
         final var birthdate = LocalDate.now();
-        final var gender = "string gender9BWNd";
+        final var gender = "string genderV4PiG";
 
         final var expectedError = Assertions.assertThrows(NotificationException.class,
             () -> PatientEntity.create(name,
@@ -47,11 +47,11 @@ public class PatientEntityTest {
 
     @Test
     void shouldCreateNewPatientEntityAndUpdate() {
-        final var expectedName = "string nameG2qvg9";
+        final var expectedName = "string nameiTzyEz";
         final var expectedBirthdate = LocalDate.now();
-        final var expectedGender = "string genderzCDul";
+        final var expectedGender = "string genderO46J8";
 
-        final var actualPatientEntity = PatientEntity.create("string name5nWhya", LocalDate.now(), "string genderScIZ8");
+        final var actualPatientEntity = PatientEntity.create("string nameu6z3Uz", LocalDate.now(), "string genderh7bXi");
         final var id = actualPatientEntity.getId();
 
         actualPatientEntity.setPhones(null);
@@ -77,13 +77,13 @@ public class PatientEntityTest {
 
     @ParameterizedTest
     @CsvSource({
-        "9lHZ2,name must be between 6 and 200 characters"
+        "l2J7g,name must be between 6 and 200 characters"
     })
     void shouldCreateNewPatientEntityAndNotUpdate(String name,
                                                   String messageError) {
-        final var actualPatientEntity = PatientEntity.create("string nameEBvTt0", LocalDate.now(), "string genderN76us");
+        final var actualPatientEntity = PatientEntity.create("string nameTsCXGC", LocalDate.now(), "string genderbL8MY");
         final var birthdate = LocalDate.now();
-        final var gender = "string genderSu7US";
+        final var gender = "string genderFdHC9";
 
         final var expectedError = Assertions.assertThrows(NotificationException.class,
             () -> actualPatientEntity.update(name,
@@ -98,10 +98,10 @@ public class PatientEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string iddB8hp";
-        final var expectedName = "string nameV9V80c";
+        final var expectedId = "string idUpg0e";
+        final var expectedName = "string namev1FS8o";
         final var expectedBirthdate = LocalDate.now();
-        final var expectedGender = "string genderH3VZP";
+        final var expectedGender = "string genderEJ5bG";
 
         final var actualPatientEntity = PatientEntity.with(expectedId, expectedName, expectedBirthdate, expectedGender, expectedCreated,
             expectedUpdated, expectedDeleted);
@@ -120,10 +120,10 @@ public class PatientEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string idnKYgn";
-        final var expectedName = "string nameF81TyI";
+        final var expectedId = "string idpATeo";
+        final var expectedName = "string nameWf79ey";
         final var expectedBirthdate = LocalDate.now();
-        final var expectedGender = "string gender1QEUi";
+        final var expectedGender = "string genderhzgYz";
 
         final var actualPatientEntity = PatientEntity.with(expectedId, expectedName, expectedBirthdate, expectedGender, expectedCreated,
             expectedUpdated, expectedDeleted);
@@ -146,9 +146,9 @@ public class PatientEntityTest {
 
     @Test
     void shouldCreateNewPatientEntityAndDelete() {
-        final var expectedName = "string nameNXZDtw";
+        final var expectedName = "string nameCw4EV7";
         final var expectedBirthdate = LocalDate.now();
-        final var expectedGender = "string gender3AD4q";
+        final var expectedGender = "string gendereWg1d";
 
         final var actualPatientEntity = PatientEntity.create(expectedName, expectedBirthdate, expectedGender);
         actualPatientEntity.delete();

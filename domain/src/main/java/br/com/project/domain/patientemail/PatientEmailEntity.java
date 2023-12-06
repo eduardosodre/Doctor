@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Table(name = "patient_email")
 public class PatientEmailEntity extends AuditableEntity {
- 
+
     @Id
     @Column(columnDefinition = "VARCHAR(36)")
     private String id;

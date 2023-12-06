@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class TreatmentService {
- 
+
     private static final String TREATMENT_NOT_FOUND = "Treatment not found";
     private final TreatmentRepository repository;
     private final DoctorService doctorService;

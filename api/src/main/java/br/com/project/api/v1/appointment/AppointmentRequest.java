@@ -2,7 +2,7 @@ package br.com.project.api.v1.appointment;
 
 import br.com.project.domain.appointment.AppointmentEntity;
 import java.time.LocalDateTime;
-
+ 
 public record AppointmentRequest(String doctorId,
                                  String patientId,
                                  LocalDateTime appointmentDate,

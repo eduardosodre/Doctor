@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TreatmentRepository extends JpaRepository<TreatmentEntity, String>,
     JpaSpecificationExecutor<TreatmentEntity> {
- 
+
 }

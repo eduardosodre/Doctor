@@ -2,14 +2,16 @@ package br.com.project.domain.treatment;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class TreatmentFilter {
- 
+
     private String id;
     private String doctorId;
     private String patientId;

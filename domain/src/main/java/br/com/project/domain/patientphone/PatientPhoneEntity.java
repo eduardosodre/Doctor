@@ -25,7 +25,7 @@ public class PatientPhoneEntity extends AuditableEntity {
     private String id;
     @Column(name = "phone")
     private String phone;
- 
+
     @ManyToOne
     @JoinColumn(name = "patient_entity_id")
     private PatientEntity patient;

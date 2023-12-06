@@ -26,7 +26,7 @@ import org.springframework.data.jpa.domain.Specification;
 
 @ExtendWith(MockitoExtension.class)
 public class PatientServiceTest {
- 
+
     @Mock
     private PatientRepository repository;
     @Mock
@@ -41,7 +41,7 @@ public class PatientServiceTest {
     @Test
     public void shouldSaveANewPatientEntity() {
 
-        final var newPatientEntity = PatientEntity.create("string nameNa4KyH", LocalDate.now(), "string genderu4n37");
+        final var newPatientEntity = PatientEntity.create("string namesAw4Dr", LocalDate.now(), "string gendersUHj9");
 
         when(repository.save(any())).thenReturn(newPatientEntity);
 
@@ -52,10 +52,10 @@ public class PatientServiceTest {
 
     @Test
     public void shouldUpdatePatientEntity() {
-        final var patientEntityFromBd = PatientEntity.create("string namerBGxcz", LocalDate.now(), "string gender81wFq");
+        final var patientEntityFromBd = PatientEntity.create("string name2BEj7B", LocalDate.now(), "string genderHW3x1");
         when(repository.findById(any())).thenReturn(Optional.of(patientEntityFromBd));
 
-        final var patientEntity = PatientEntity.with(patientEntityFromBd.getId(), "string nameQEpFeD", LocalDate.now(), "string gender9njqs",
+        final var patientEntity = PatientEntity.with(patientEntityFromBd.getId(), "string nameR9jU9O", LocalDate.now(), "string genderSpA8w",
             patientEntityFromBd.getCreatedAt(), patientEntityFromBd.getUpdatedAt(), patientEntityFromBd.getDeletedAt());
         when(repository.save(any())).thenReturn(patientEntity);
 
@@ -69,7 +69,7 @@ public class PatientServiceTest {
     public void shouldNotUpdatePatientEntityWhenPatientEntityNotExists() {
         when(repository.findById(any())).thenReturn(Optional.empty());
 
-        final var patientEntity = PatientEntity.create("string nameG8WiO5", LocalDate.now(), "string gender9sSPS");
+        final var patientEntity = PatientEntity.create("string nameBO0bkV", LocalDate.now(), "string genderX8c9I");
         final var expectedException = Assertions.assertThrows(NotFoundException.class,
             () -> service.update(patientEntity.getId(), patientEntity));
 
@@ -81,7 +81,7 @@ public class PatientServiceTest {
 
     @Test
     public void shouldGetById() {
-        final var patientEntityFromBd = PatientEntity.create("string namelfAmpm", LocalDate.now(), "string genderjfjxP");
+        final var patientEntityFromBd = PatientEntity.create("string nameJuiXvH", LocalDate.now(), "string gendervC7qZ");
         when(repository.findById(any())).thenReturn(Optional.of(patientEntityFromBd));
 
         final var result = service.findById("id");
@@ -93,7 +93,7 @@ public class PatientServiceTest {
 
     @Test
     public void shouldGetByIds() {
-        final var patientEntityFromBd = PatientEntity.create("string nametCL7Cm", LocalDate.now(), "string genderIJowE");
+        final var patientEntityFromBd = PatientEntity.create("string name7QTsfA", LocalDate.now(), "string gendercUc5u");
         when(repository.findAllById(any())).thenReturn(List.of(patientEntityFromBd));
 
         final var resultList = service.findByIds(List.of("id"));
@@ -105,7 +105,7 @@ public class PatientServiceTest {
 
     @Test
     public void shouldDelete() {
-        final var patientEntityFromBd = PatientEntity.create("string nameNH4G2y", LocalDate.now(), "string genderZreiJ");
+        final var patientEntityFromBd = PatientEntity.create("string nameWdfxtO", LocalDate.now(), "string genderHmmfl");
         when(repository.findById(any())).thenReturn(Optional.of(patientEntityFromBd));
         when(repository.save(any())).thenReturn(patientEntityFromBd);
 
@@ -117,7 +117,7 @@ public class PatientServiceTest {
 
     @Test
     public void shouldDeletePhones() {
-        final var patientEntityFromBd = PatientEntity.create("string nameFF3gGw", LocalDate.now(), "string genderdI5h2");
+        final var patientEntityFromBd = PatientEntity.create("string nameT18aGw", LocalDate.now(), "string gendere90Wr");
         when(repository.findById(any())).thenReturn(Optional.of(patientEntityFromBd));
         doNothing().when(phonesService).delete(any());
 
@@ -129,7 +129,7 @@ public class PatientServiceTest {
 
     @Test
     public void shouldDeleteAddresses() {
-        final var patientEntityFromBd = PatientEntity.create("string nameFF3gGw", LocalDate.now(), "string genderdI5h2");
+        final var patientEntityFromBd = PatientEntity.create("string nameT18aGw", LocalDate.now(), "string gendere90Wr");
         when(repository.findById(any())).thenReturn(Optional.of(patientEntityFromBd));
         doNothing().when(addressesService).delete(any());
 
@@ -141,7 +141,7 @@ public class PatientServiceTest {
 
     @Test
     public void shouldDeleteEmails() {
-        final var patientEntityFromBd = PatientEntity.create("string nameFF3gGw", LocalDate.now(), "string genderdI5h2");
+        final var patientEntityFromBd = PatientEntity.create("string nameT18aGw", LocalDate.now(), "string gendere90Wr");
         when(repository.findById(any())).thenReturn(Optional.of(patientEntityFromBd));
         doNothing().when(emailsService).delete(any());
 
@@ -156,7 +156,7 @@ public class PatientServiceTest {
         final var page = Pageable.unpaged();
         final var filter = new PatientFilter();
 
-        final var patientEntityFromBd = PatientEntity.create("string nameYggTkS", LocalDate.now(), "string genderZzWGR");
+        final var patientEntityFromBd = PatientEntity.create("string nameW1Y1P4", LocalDate.now(), "string genderGM7hA");
         final var expectedPage = new PageImpl<>(List.of(patientEntityFromBd), page, 1);
 
         when(repository.findAll(any(Specification.class), any(Pageable.class))).thenReturn(expectedPage);

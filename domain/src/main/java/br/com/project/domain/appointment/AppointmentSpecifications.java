@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import lombok.experimental.UtilityClass;
 import org.springframework.data.jpa.domain.Specification;
-
+ 
 @UtilityClass
 public class AppointmentSpecifications {
 

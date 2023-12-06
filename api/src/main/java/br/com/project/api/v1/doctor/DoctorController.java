@@ -24,13 +24,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
+ 
 @RestController
 @RequestMapping("/v1/doctors")
 @RequiredArgsConstructor
 public class DoctorController {
 
     private final DoctorService doctorService;
+
 
     @Operation(summary = "Find all Doctors")
     @ApiResponse(responseCode = "200", description = "Successfully retrieved Doctors",

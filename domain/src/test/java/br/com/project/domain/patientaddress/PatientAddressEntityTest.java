@@ -7,16 +7,16 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class PatientAddressEntityTest {
- 
+
     @Test
     void shouldCreateNewPatientAddressEntity() {
-        final var expectedStreet = "string streetES5Ve";
-        final var expectedNumber = "string numberFygee";
-        final var expectedNeighborhood = "string neighborhoodL6yQp";
-        final var expectedCity = "string citylKIJf";
-        final var expectedState = "string state1Ur5D";
-        final var expectedCountry = "string countryhEoIS";
-        final var expectedPatient = PatientEntity.create("string namehcz7Ay", LocalDate.now(), "string gendero6M10");
+        final var expectedStreet = "string streetVz4bE";
+        final var expectedNumber = "string number5wknm";
+        final var expectedNeighborhood = "string neighborhoodNBoHC";
+        final var expectedCity = "string cityikH2f";
+        final var expectedState = "string stateL4MEk";
+        final var expectedCountry = "string countryCfG6U";
+        final var expectedPatient = PatientEntity.create("string namenz3yuK", LocalDate.now(), "string genderkhzcO");
 
         final var actualPatientAddressEntity = PatientAddressEntity.create(expectedStreet, expectedNumber, expectedNeighborhood, expectedCity,
             expectedState, expectedCountry, expectedPatient);
@@ -36,17 +36,16 @@ public class PatientAddressEntityTest {
 
     @Test
     void shouldCreateNewPatientAddressEntityAndUpdate() {
-        final var expectedStreet = "string streetw5VR0";
-        final var expectedNumber = "string numberJRnp4";
-        final var expectedNeighborhood = "string neighborhoodO4QWw";
-        final var expectedCity = "string cityqDMHX";
-        final var expectedState = "string state7Swhp";
-        final var expectedCountry = "string countryNFzL2";
-        final var expectedPatient = PatientEntity.create("string nameqWKVWq", LocalDate.now(), "string genderTxlix");
+        final var expectedStreet = "string streetSdMBp";
+        final var expectedNumber = "string numberY8Cu8";
+        final var expectedNeighborhood = "string neighborhood3dTZl";
+        final var expectedCity = "string cityklBHo";
+        final var expectedState = "string stateSamjX";
+        final var expectedCountry = "string country41RAP";
 
-        final var actualPatientAddressEntity = PatientAddressEntity.create("string streetiEtUC", "string numberdASkJ", "string neighborhoodEc5Xx",
-            "string city1HW2n", "string stateMbheU", "string countrySqKUx",
-            PatientEntity.create("string nameF7CAeZ", LocalDate.now(), "string genderXbSmh"));
+        final var actualPatientAddressEntity = PatientAddressEntity.create("string streetwxUIM", "string numberu8hkP", "string neighborhoodox7wJ",
+            "string cityyfseE", "string statePJAox", "string countryXwJSo",
+            PatientEntity.create("string nameRrxWUG", LocalDate.now(), "string genderlCyQ6"));
         final var id = actualPatientAddressEntity.getId();
 
         actualPatientAddressEntity.update(expectedStreet, expectedNumber, expectedNeighborhood, expectedCity, expectedState, expectedCountry);
@@ -69,14 +68,14 @@ public class PatientAddressEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string idxTc0V";
-        final var expectedStreet = "string street7ojGY";
-        final var expectedNumber = "string numberWgwqv";
-        final var expectedNeighborhood = "string neighborhoodgqVjO";
-        final var expectedCity = "string citycFH78";
-        final var expectedState = "string stateXaayh";
-        final var expectedCountry = "string countryVtQ4H";
-        final var expectedPatient = PatientEntity.create("string nameqLXhrg", LocalDate.now(), "string genderUp7WL");
+        final var expectedId = "string id6M5xO";
+        final var expectedStreet = "string streetbIFc7";
+        final var expectedNumber = "string numberfvyqw";
+        final var expectedNeighborhood = "string neighborhoodDv8YV";
+        final var expectedCity = "string city1UYq4";
+        final var expectedState = "string stateb9iSu";
+        final var expectedCountry = "string countryx7BbY";
+        final var expectedPatient = PatientEntity.create("string nameEsb10h", LocalDate.now(), "string gender0Lg2T");
 
         final var actualPatientAddressEntity = PatientAddressEntity.with(expectedId, expectedStreet, expectedNumber, expectedNeighborhood,
             expectedCity, expectedState, expectedCountry, expectedPatient, expectedCreated, expectedUpdated, expectedDeleted);
@@ -99,14 +98,14 @@ public class PatientAddressEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string idcOJwB";
-        final var expectedStreet = "string street53OXx";
-        final var expectedNumber = "string numberqpF0r";
-        final var expectedNeighborhood = "string neighborhoodu6AzS";
-        final var expectedCity = "string city8JF1D";
-        final var expectedState = "string statehDS2y";
-        final var expectedCountry = "string country8DdWC";
-        final var expectedPatient = PatientEntity.create("string namewfb2QK", LocalDate.now(), "string genderKNoDj");
+        final var expectedId = "string id41Nqp";
+        final var expectedStreet = "string streetUGtBp";
+        final var expectedNumber = "string number2JcRr";
+        final var expectedNeighborhood = "string neighborhood6v7NS";
+        final var expectedCity = "string cityFJ141";
+        final var expectedState = "string state5thDM";
+        final var expectedCountry = "string countryOdxTt";
+        final var expectedPatient = PatientEntity.create("string nameJnEynt", LocalDate.now(), "string gender4G6yx");
 
         final var actualPatientAddressEntity = PatientAddressEntity.with(expectedId, expectedStreet, expectedNumber, expectedNeighborhood,
             expectedCity, expectedState, expectedCountry, expectedPatient, expectedCreated, expectedUpdated, expectedDeleted);
@@ -137,13 +136,13 @@ public class PatientAddressEntityTest {
 
     @Test
     void shouldCreateNewPatientAddressEntityAndDelete() {
-        final var expectedStreet = "string streetBhSNk";
-        final var expectedNumber = "string numberM1Rvq";
-        final var expectedNeighborhood = "string neighborhoodF84Xs";
-        final var expectedCity = "string cityujnhj";
-        final var expectedState = "string state5WKzw";
-        final var expectedCountry = "string country88ZRe";
-        final var expectedPatient = PatientEntity.create("string name1mJxqx", LocalDate.now(), "string gender8ppfm");
+        final var expectedStreet = "string streetF4whP";
+        final var expectedNumber = "string numberRCCFg";
+        final var expectedNeighborhood = "string neighborhoodhhCFM";
+        final var expectedCity = "string cityKaxkm";
+        final var expectedState = "string stategltFe";
+        final var expectedCountry = "string country4cmHI";
+        final var expectedPatient = PatientEntity.create("string nameDQ4mKm", LocalDate.now(), "string genderNbORq");
 
         final var actualPatientAddressEntity = PatientAddressEntity.create(expectedStreet, expectedNumber, expectedNeighborhood, expectedCity,
             expectedState, expectedCountry, expectedPatient);

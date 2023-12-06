@@ -40,14 +40,14 @@ public class AppointmentServiceTest {
     @Test
     public void shouldSaveANewAppointmentEntity() {
 
-        final var doctorId = DoctorEntity.create("string crmYkx", "string name07sZSQ", "string specialtycSg");
+        final var doctorId = DoctorEntity.create("string crm6wI", "string namevFwLMG", "string specialtyaQY");
         when(doctorService.findById(any())).thenReturn(doctorId);
 
-        final var patientId = PatientEntity.create("string nameXeEcK7", LocalDate.now(), "string gender00krw");
+        final var patientId = PatientEntity.create("string namej0cHsT", LocalDate.now(), "string gendergmgQV");
         when(patientService.findById(any())).thenReturn(patientId);
 
-        final var newAppointmentEntity = AppointmentEntity.create("b3996fdd-5d63-4f86-bfb5-921d7a5092ca", "64b247ef-af4c-47ce-ba75-e308b046e928",
-            LocalDateTime.now(), "string status5B9QI");
+        final var newAppointmentEntity = AppointmentEntity.create("29970b98-bf99-4974-816f-20e49ad42865", "82418514-5742-4f3f-8830-0ac81ef7f785",
+            LocalDateTime.now(), "string statuskrU1i");
 
         when(repository.save(any())).thenReturn(newAppointmentEntity);
 
@@ -60,18 +60,18 @@ public class AppointmentServiceTest {
 
     @Test
     public void shouldUpdateAppointmentEntity() {
-        final var appointmentEntityFromBd = AppointmentEntity.create("dccb34e7-9527-4666-8c37-5c4cd4fbab41", "d5da6aa8-9db9-41d0-a8e9-0ff6c305b17d",
-            LocalDateTime.now(), "string statusc2Ewy");
+        final var appointmentEntityFromBd = AppointmentEntity.create("bdb5b1f0-2384-4e3e-b847-65ab13a4b7f4", "596bde6b-d258-4c75-ada0-269add3b6412",
+            LocalDateTime.now(), "string statuslJAv0");
         when(repository.findById(any())).thenReturn(Optional.of(appointmentEntityFromBd));
 
-        final var doctorId = DoctorEntity.create("string crmgPw", "string nameal6vkf", "string specialtyjxm");
+        final var doctorId = DoctorEntity.create("string crmIRA", "string namee1cXEs", "string specialtyAc4");
         when(doctorService.findById(any())).thenReturn(doctorId);
 
-        final var patientId = PatientEntity.create("string nameGQTuHW", LocalDate.now(), "string gendertdnoJ");
+        final var patientId = PatientEntity.create("string nameaFVCEJ", LocalDate.now(), "string gender5gBzf");
         when(patientService.findById(any())).thenReturn(patientId);
 
-        final var appointmentEntity = AppointmentEntity.with(appointmentEntityFromBd.getId(), "9c314611-d5db-4bbb-b55a-40a20bc04296",
-            "c2c15672-77ae-4337-be2f-809ecfca2fe2", LocalDateTime.now(), "string statusrHaYk", appointmentEntityFromBd.getCreatedAt(),
+        final var appointmentEntity = AppointmentEntity.with(appointmentEntityFromBd.getId(), "74693ecd-fdf7-496e-9e72-437097d64d2d",
+            "fc5abb9c-9127-4bb9-bbff-669e4e8ae751", LocalDateTime.now(), "string statusL8B6k", appointmentEntityFromBd.getCreatedAt(),
             appointmentEntityFromBd.getUpdatedAt(), appointmentEntityFromBd.getDeletedAt());
         when(repository.save(any())).thenReturn(appointmentEntity);
 
@@ -87,8 +87,8 @@ public class AppointmentServiceTest {
     public void shouldNotUpdateAppointmentEntityWhenAppointmentEntityNotExists() {
         when(repository.findById(any())).thenReturn(Optional.empty());
 
-        final var appointmentEntity = AppointmentEntity.create("84e4d784-acd1-4f18-8d98-7da53ae368a7", "371b9df5-8f9d-4903-b3c1-05badd5608c9",
-            LocalDateTime.now(), "string statuschtrs");
+        final var appointmentEntity = AppointmentEntity.create("02ca3a0a-d573-4fe5-a328-9804509dc746", "4deae1f2-2f02-4b91-a146-fcb8546f3313",
+            LocalDateTime.now(), "string statusujr0o");
         final var expectedException = Assertions.assertThrows(NotFoundException.class,
             () -> service.update(appointmentEntity.getId(), appointmentEntity));
 
@@ -102,8 +102,8 @@ public class AppointmentServiceTest {
 
     @Test
     public void shouldGetById() {
-        final var appointmentEntityFromBd = AppointmentEntity.create("a25e42f0-cd70-4bdf-b9f0-1ad8ccf6da63", "758b3ae0-1938-4d0a-8485-4042e26eca17",
-            LocalDateTime.now(), "string status3BX60");
+        final var appointmentEntityFromBd = AppointmentEntity.create("9ba6aea0-7cce-475e-bcec-008de3376427", "8fa68a61-a6f9-4200-9931-f59bdfb74d64",
+            LocalDateTime.now(), "string statusKIjwg");
         when(repository.findById(any())).thenReturn(Optional.of(appointmentEntityFromBd));
 
         final var result = service.findById("id");
@@ -115,8 +115,8 @@ public class AppointmentServiceTest {
 
     @Test
     public void shouldGetByIds() {
-        final var appointmentEntityFromBd = AppointmentEntity.create("61f9f2e1-c1b6-4ca9-ac85-6b4ec2090280", "84d4eaea-4415-4493-b723-8ba43166c0f7",
-            LocalDateTime.now(), "string statusfjbuk");
+        final var appointmentEntityFromBd = AppointmentEntity.create("d56d1b99-2860-4ccd-a662-991c0e012016", "2d91bf86-a98c-4966-ba54-38dea29e1b9f",
+            LocalDateTime.now(), "string statusz00q9");
         when(repository.findAllById(any())).thenReturn(List.of(appointmentEntityFromBd));
 
         final var resultList = service.findByIds(List.of("id"));
@@ -128,8 +128,8 @@ public class AppointmentServiceTest {
 
     @Test
     public void shouldDelete() {
-        final var appointmentEntityFromBd = AppointmentEntity.create("bbe1e9c6-0ef2-4d8b-98eb-803f6a758036", "25186970-4dfc-4e03-aabc-948d9c3d7020",
-            LocalDateTime.now(), "string statusRroaJ");
+        final var appointmentEntityFromBd = AppointmentEntity.create("79092da8-5189-47bc-980d-1bb91dee8b27", "4ef0402f-f60d-43f7-8f56-e63cac4d2c7e",
+            LocalDateTime.now(), "string statusBTja1");
         when(repository.findById(any())).thenReturn(Optional.of(appointmentEntityFromBd));
         when(repository.save(any())).thenReturn(appointmentEntityFromBd);
 
@@ -145,8 +145,8 @@ public class AppointmentServiceTest {
         final var page = Pageable.unpaged();
         final var filter = new AppointmentFilter();
 
-        final var appointmentEntityFromBd = AppointmentEntity.create("ec2e7b75-dadc-4c59-a7e0-88d449efb047", "69c3656c-5b58-4ffe-85e9-cbaf479273ef",
-            LocalDateTime.now(), "string statusJg909");
+        final var appointmentEntityFromBd = AppointmentEntity.create("573138d6-51ae-4f72-9a6f-8e7cb6601779", "8bbfbdab-57d8-448f-913b-aa92fc2d25ed",
+            LocalDateTime.now(), "string statusiV8QG");
         final var expectedPage = new PageImpl<>(List.of(appointmentEntityFromBd), page, 1);
 
         when(repository.findAll(any(Specification.class), any(Pageable.class))).thenReturn(expectedPage);

@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class AppointmentEntityTest {
- 
+
     @Test
     void shouldCreateNewAppointmentEntity() {
-        final var expectedDoctorId = "8b9effba-671f-4504-8ed9-a8bc71a4201f";
-        final var expectedPatientId = "1435bcb0-83c6-406f-a8b0-4ccb830ea2b6";
+        final var expectedDoctorId = "93e34bd5-c2c5-4c62-af27-32b96b888ffa";
+        final var expectedPatientId = "fcb1105a-97de-4515-9186-13e199289246";
         final var expectedAppointmentDate = LocalDateTime.now();
-        final var expectedStatus = "string statusyIIJ6";
+        final var expectedStatus = "string statusnhS8K";
 
         final var actualAppointmentEntity = AppointmentEntity.create(expectedDoctorId, expectedPatientId, expectedAppointmentDate, expectedStatus);
         Assertions.assertNotNull(actualAppointmentEntity);
@@ -24,16 +24,16 @@ public class AppointmentEntityTest {
         Assertions.assertEquals(expectedAppointmentDate, actualAppointmentEntity.getAppointmentDate());
         Assertions.assertEquals(expectedStatus, actualAppointmentEntity.getStatus());
     }
-
+ 
     @Test
     void shouldCreateNewAppointmentEntityAndUpdate() {
-        final var expectedDoctorId = "c3c93371-41d4-4244-9133-7b5d50075e4a";
-        final var expectedPatientId = "83ed00a6-6929-4532-8614-c69007ba38db";
+        final var expectedDoctorId = "45f8e603-ba4e-4a29-9c7b-da393fb311a0";
+        final var expectedPatientId = "a85ef41b-2476-4c14-9d4c-eef00ef8733d";
         final var expectedAppointmentDate = LocalDateTime.now();
-        final var expectedStatus = "string statusdd0Rd";
+        final var expectedStatus = "string status4RD01";
 
-        final var actualAppointmentEntity = AppointmentEntity.create("d5b5679b-d916-46c6-a1b8-bb425e04ac49", "a37d1d0a-2fcd-4d70-aec9-40f580087e95",
-            LocalDateTime.now(), "string status8PFEZ");
+        final var actualAppointmentEntity = AppointmentEntity.create("3dedd1d0-04d4-4eb0-8475-320ca177dfb6", "d43eed4c-45bc-4ddd-87a5-33c14e38ea8d",
+            LocalDateTime.now(), "string statusNkHDv");
         final var id = actualAppointmentEntity.getId();
 
         actualAppointmentEntity.update(expectedDoctorId, expectedPatientId, expectedAppointmentDate, expectedStatus);
@@ -54,11 +54,11 @@ public class AppointmentEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string iddiSxi";
-        final var expectedDoctorId = "4a870417-4be9-400c-b94d-ae49dcbc3a18";
-        final var expectedPatientId = "3c6de221-fc70-4563-b443-bcd44e9fa00a";
+        final var expectedId = "string id7NTF1";
+        final var expectedDoctorId = "0daa4164-cfe6-4541-9f0c-e7a581954962";
+        final var expectedPatientId = "c4a760de-8d06-4686-b0f5-c1e56da6f974";
         final var expectedAppointmentDate = LocalDateTime.now();
-        final var expectedStatus = "string status98Lsk";
+        final var expectedStatus = "string statusLD660";
 
         final var actualAppointmentEntity = AppointmentEntity.with(expectedId, expectedDoctorId, expectedPatientId, expectedAppointmentDate,
             expectedStatus, expectedCreated, expectedUpdated, expectedDeleted);
@@ -78,11 +78,11 @@ public class AppointmentEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string idWTcrC";
-        final var expectedDoctorId = "53f506dc-6f0c-4829-bbab-b4630ee583ba";
-        final var expectedPatientId = "07410e10-c4a3-4a50-a35f-a2c467d2d371";
+        final var expectedId = "string idutjYt";
+        final var expectedDoctorId = "5f07db5b-6a2a-4d19-b9e7-7b5f219133b7";
+        final var expectedPatientId = "4a853c3b-9a6d-4bc9-8786-37abbb2bd051";
         final var expectedAppointmentDate = LocalDateTime.now();
-        final var expectedStatus = "string statusMgA2x";
+        final var expectedStatus = "string statusBgzYR";
 
         final var actualAppointmentEntity = AppointmentEntity.with(expectedId, expectedDoctorId, expectedPatientId, expectedAppointmentDate,
             expectedStatus, expectedCreated, expectedUpdated, expectedDeleted);
@@ -107,10 +107,10 @@ public class AppointmentEntityTest {
 
     @Test
     void shouldCreateNewAppointmentEntityAndDelete() {
-        final var expectedDoctorId = "82d78ae3-1e12-488a-8144-47bd88ec18d5";
-        final var expectedPatientId = "ffd724d7-02c4-4abb-9173-46c869e04036";
+        final var expectedDoctorId = "d2e1eb1a-5342-4c00-92c2-5f7c20b8ea32";
+        final var expectedPatientId = "889fadf1-a06d-4e15-81af-446e2089b522";
         final var expectedAppointmentDate = LocalDateTime.now();
-        final var expectedStatus = "string statusuS3xL";
+        final var expectedStatus = "string statusafbXY";
 
         final var actualAppointmentEntity = AppointmentEntity.create(expectedDoctorId, expectedPatientId, expectedAppointmentDate, expectedStatus);
         actualAppointmentEntity.delete();

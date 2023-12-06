@@ -31,7 +31,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class PatientController {
 
     private final PatientService patientService;
-	
+
+
     @Operation(summary = "Find all Patients")
     @ApiResponse(responseCode = "200", description = "Successfully retrieved Patients",
         content = @Content(mediaType = "application/json", schema = @Schema(implementation = Page.class)))

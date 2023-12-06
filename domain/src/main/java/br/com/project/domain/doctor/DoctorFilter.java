@@ -2,10 +2,12 @@ package br.com.project.domain.doctor;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-@Data
+import lombok.Setter;
+ 
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class DoctorFilter {
@@ -14,7 +16,7 @@ public class DoctorFilter {
     private String crm;
     private String name;
     private String specialty;
- 
+
     public static DoctorFilter create(final String id,
                                       final String crm,
                                       final String name,

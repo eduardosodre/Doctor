@@ -5,16 +5,16 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class TreatmentEntityTest {
- 
+
     @Test
     void shouldCreateNewTreatmentEntity() {
-        final var expectedDoctorId = "b2eccd15-32fa-48e8-9dfa-0c51291d4746";
-        final var expectedPatientId = "76f7b769-44c4-4452-8b13-593098747d48";
-        final var expectedAppointmentId = "8fbe2df7-2df3-4ac4-810c-fc200216e230";
-        final var expectedDiagnosis = "string diagnosisOR2s6";
-        final var expectedPrescription = "string prescriptionDqOHN";
-        final var expectedNotes = "string notesm0Wjz";
-        final var expectedOutcome = "string outcomeq2Pkn";
+        final var expectedDoctorId = "78596289-befa-4f84-bed3-6133f4afa3c5";
+        final var expectedPatientId = "fecf2720-517a-4069-bdcc-b543ca7af916";
+        final var expectedAppointmentId = "ad61cb09-3e63-4001-baa9-a0c0f4678e75";
+        final var expectedDiagnosis = "string diagnosisOHGxt";
+        final var expectedPrescription = "string prescriptionC5YgK";
+        final var expectedNotes = "string notesNjr8K";
+        final var expectedOutcome = "string outcomeZyMST";
 
         final var actualTreatmentEntity = TreatmentEntity.create(expectedDoctorId, expectedPatientId, expectedAppointmentId, expectedDiagnosis,
             expectedPrescription, expectedNotes, expectedOutcome);
@@ -34,16 +34,16 @@ public class TreatmentEntityTest {
 
     @Test
     void shouldCreateNewTreatmentEntityAndUpdate() {
-        final var expectedDoctorId = "72f2cf3a-8cf5-4b0f-8ff8-b73eba3a0617";
-        final var expectedPatientId = "1148b4ba-96c0-4df8-91af-e68ddd0353e1";
-        final var expectedAppointmentId = "3615d90b-9937-4cbd-8979-325c43f1dd38";
-        final var expectedDiagnosis = "string diagnosis8OxmF";
-        final var expectedPrescription = "string prescriptionjLmSl";
-        final var expectedNotes = "string notesJa4y9";
-        final var expectedOutcome = "string outcomeV0eaz";
+        final var expectedDoctorId = "a47a1adc-02fd-4848-b0c3-814d5ba6c3a1";
+        final var expectedPatientId = "d306fff7-dadb-4068-aae9-ff626512af34";
+        final var expectedAppointmentId = "a75cb158-ca9c-4b0a-805f-63b6a28a825e";
+        final var expectedDiagnosis = "string diagnosisox93X";
+        final var expectedPrescription = "string prescription7Oeos";
+        final var expectedNotes = "string notesV4Ubj";
+        final var expectedOutcome = "string outcome2bYip";
 
-        final var actualTreatmentEntity = TreatmentEntity.create("08297432-ee09-4c7d-b93a-7f19799dd506", "4c8ff618-1618-4aad-9b10-c983964bcf74",
-            "763b1f39-c637-4852-ae10-03a2a70a1a39", "string diagnosisVCCP6", "string prescriptioni6FIe", "string notesAA0xG", "string outcomeXMgvF");
+        final var actualTreatmentEntity = TreatmentEntity.create("d9ee0853-b554-491f-8837-1f0c718b2f29", "8dd7f1f7-b0a8-4938-822b-79808f226136",
+            "307668eb-65c9-461f-8f18-ffab8fdcc5a4", "string diagnosisROtrB", "string prescription5d5xz", "string notes1QtXd", "string outcome6xhjd");
         final var id = actualTreatmentEntity.getId();
 
         actualTreatmentEntity.update(expectedDoctorId, expectedPatientId, expectedAppointmentId, expectedDiagnosis, expectedPrescription,
@@ -68,14 +68,14 @@ public class TreatmentEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string idTgbK8";
-        final var expectedDoctorId = "a1020e0c-c7ef-476f-b688-b7cc7ccf7d53";
-        final var expectedPatientId = "caef6be0-8a5f-46ce-9a69-570e0257d8ba";
-        final var expectedAppointmentId = "ddb8f7aa-6cbb-4717-a4b3-bc2ef51787f7";
-        final var expectedDiagnosis = "string diagnosisaMsaz";
-        final var expectedPrescription = "string prescriptionI37df";
-        final var expectedNotes = "string noteskpwKa";
-        final var expectedOutcome = "string outcomeGsafy";
+        final var expectedId = "string idU0JVB";
+        final var expectedDoctorId = "98df57fd-3fcf-4326-b28f-3867fe94d2bd";
+        final var expectedPatientId = "834a832b-be51-4ee2-a323-45104ef9d5c4";
+        final var expectedAppointmentId = "9d2820b7-90a0-424b-8a72-014ae25a3058";
+        final var expectedDiagnosis = "string diagnosis5z1I4";
+        final var expectedPrescription = "string prescriptionaumUK";
+        final var expectedNotes = "string notes4TdBx";
+        final var expectedOutcome = "string outcome8x79w";
 
         final var actualTreatmentEntity = TreatmentEntity.with(expectedId, expectedDoctorId, expectedPatientId, expectedAppointmentId,
             expectedDiagnosis, expectedPrescription, expectedNotes, expectedOutcome, expectedCreated, expectedUpdated, expectedDeleted);
@@ -98,14 +98,14 @@ public class TreatmentEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string idpVZwX";
-        final var expectedDoctorId = "2bfeda8a-5489-4403-9dc2-2d111cc60bf8";
-        final var expectedPatientId = "0191aa59-e528-4b07-a5ef-772f41c789f3";
-        final var expectedAppointmentId = "25402d1a-497c-496f-87fe-21250aa20289";
-        final var expectedDiagnosis = "string diagnosisUMbss";
-        final var expectedPrescription = "string prescriptionhlmrv";
-        final var expectedNotes = "string notes0Cnlr";
-        final var expectedOutcome = "string outcomegEs8h";
+        final var expectedId = "string idt4Aqy";
+        final var expectedDoctorId = "5b9f5c14-0e6b-4f14-b305-d70c09c4423b";
+        final var expectedPatientId = "fd43cf28-0092-4395-949c-022afc772e77";
+        final var expectedAppointmentId = "d65737b0-6b89-407f-8f5e-8ae29ea5633d";
+        final var expectedDiagnosis = "string diagnosisWksnA";
+        final var expectedPrescription = "string prescriptionjmDJ0";
+        final var expectedNotes = "string notesBX2sF";
+        final var expectedOutcome = "string outcomeM5YO6";
 
         final var actualTreatmentEntity = TreatmentEntity.with(expectedId, expectedDoctorId, expectedPatientId, expectedAppointmentId,
             expectedDiagnosis, expectedPrescription, expectedNotes, expectedOutcome, expectedCreated, expectedUpdated, expectedDeleted);
@@ -136,13 +136,13 @@ public class TreatmentEntityTest {
 
     @Test
     void shouldCreateNewTreatmentEntityAndDelete() {
-        final var expectedDoctorId = "f39d5413-19dd-4bcd-9bb1-33864ebb6452";
-        final var expectedPatientId = "3feecdfa-cd8f-41c0-89e4-8bfd684985ff";
-        final var expectedAppointmentId = "0759093e-8951-4e26-8ad3-7a69f4822cdf";
-        final var expectedDiagnosis = "string diagnosissFpER";
-        final var expectedPrescription = "string prescription2q0GO";
-        final var expectedNotes = "string notesqSMHf";
-        final var expectedOutcome = "string outcomeSwaaW";
+        final var expectedDoctorId = "c80dcea5-3d8e-4198-91ba-5d712825312f";
+        final var expectedPatientId = "846059b9-9b7f-4dfd-8867-e232f3223c29";
+        final var expectedAppointmentId = "379323c7-b1c4-4483-b2f0-16554c216eba";
+        final var expectedDiagnosis = "string diagnosislT3oO";
+        final var expectedPrescription = "string prescriptionE6I9l";
+        final var expectedNotes = "string notesX9qpL";
+        final var expectedOutcome = "string outcomeJIUTh";
 
         final var actualTreatmentEntity = TreatmentEntity.create(expectedDoctorId, expectedPatientId, expectedAppointmentId, expectedDiagnosis,
             expectedPrescription, expectedNotes, expectedOutcome);

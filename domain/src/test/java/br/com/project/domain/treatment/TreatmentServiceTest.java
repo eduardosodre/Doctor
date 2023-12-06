@@ -29,7 +29,7 @@ import org.springframework.data.jpa.domain.Specification;
 
 @ExtendWith(MockitoExtension.class)
 public class TreatmentServiceTest {
- 
+
     @Mock
     private TreatmentRepository repository;
     @Mock
@@ -44,18 +44,18 @@ public class TreatmentServiceTest {
     @Test
     public void shouldSaveANewTreatmentEntity() {
 
-        final var doctorId = DoctorEntity.create("string crmmml", "string namez8jWHf", "string specialtyMX9");
+        final var doctorId = DoctorEntity.create("string crm9CZ", "string nameBU6Tpt", "string specialtyxk6");
         when(doctorService.findById(any())).thenReturn(doctorId);
 
-        final var patientId = PatientEntity.create("string nameVozIoe", LocalDate.now(), "string genderldOZ6");
+        final var patientId = PatientEntity.create("string namem3bGEV", LocalDate.now(), "string genderVg2Sm");
         when(patientService.findById(any())).thenReturn(patientId);
 
-        final var appointmentId = AppointmentEntity.create("55bbc73f-f6e9-4fe4-89c9-4217a38c32b6", "d3f32866-f559-4348-a844-6d46d8c354f7",
-            LocalDateTime.now(), "string statusMai2L");
+        final var appointmentId = AppointmentEntity.create("536d4489-3681-4a3f-9d58-dcafa07fc173", "188042c2-efcb-42bd-9dc2-d38a3276f7aa",
+            LocalDateTime.now(), "string status4jSKJ");
         when(appointmentService.findById(any())).thenReturn(appointmentId);
 
-        final var newTreatmentEntity = TreatmentEntity.create("f9774759-40f4-4830-a85a-00a31f0e6dc6", "f73d1938-ebf9-496d-a016-7313ca6a97cd",
-            "422e97de-62c6-4618-9b33-cb078ebb8298", "string diagnosisNNGer", "string prescriptionc1Dp4", "string notesI5GBN", "string outcomeUSDlp");
+        final var newTreatmentEntity = TreatmentEntity.create("df825b1a-2e67-482f-b905-c1c143a403e2", "425f9812-e016-4c23-8906-09e3a8874faf",
+            "9bddaf60-50c4-4858-b44a-61a35cea3dfe", "string diagnosisP47tC", "string prescriptionZJC4M", "string notesEKEE5", "string outcomehamE5");
 
         when(repository.save(any())).thenReturn(newTreatmentEntity);
 
@@ -69,23 +69,23 @@ public class TreatmentServiceTest {
 
     @Test
     public void shouldUpdateTreatmentEntity() {
-        final var treatmentEntityFromBd = TreatmentEntity.create("5b9e7182-e2fe-425a-99b2-b96b8d5d1b99", "01710446-3124-4230-8cc7-a7abef3ceed7",
-            "d13dbac9-6f79-486d-b7be-0792c5b58867", "string diagnosishBglk", "string prescriptionWAmtJ", "string notesnFgiL", "string outcomeGemHw");
+        final var treatmentEntityFromBd = TreatmentEntity.create("5bcb1135-68ae-44dd-9a89-ffb5a9fc6bb1", "e5200690-fafc-40e9-bca6-9ce23a5ebddf",
+            "92e7b1a4-9da1-4b90-9bca-8795cc43da8a", "string diagnosisTJmvT", "string prescription437Fu", "string notesTQXtA", "string outcomeYsKW5");
         when(repository.findById(any())).thenReturn(Optional.of(treatmentEntityFromBd));
 
-        final var doctorId = DoctorEntity.create("string crm7yw", "string nameIAAmTv", "string specialtybKn");
+        final var doctorId = DoctorEntity.create("string crmD56", "string nameu64zCO", "string specialty5CF");
         when(doctorService.findById(any())).thenReturn(doctorId);
 
-        final var patientId = PatientEntity.create("string namecszPPH", LocalDate.now(), "string genderbUDUe");
+        final var patientId = PatientEntity.create("string namezv3rtH", LocalDate.now(), "string genderyxuwn");
         when(patientService.findById(any())).thenReturn(patientId);
 
-        final var appointmentId = AppointmentEntity.create("f00dab80-9e3e-4513-a78d-4a1eecb3d8ec", "04e4e6b4-6edb-4f91-af0a-d66f12e84310",
-            LocalDateTime.now(), "string statusehG6y");
+        final var appointmentId = AppointmentEntity.create("d10c4e80-24f7-47c2-b977-c57aa71031cd", "5aac2d7f-b5de-43b2-978a-687d170d8c9c",
+            LocalDateTime.now(), "string statusetAHb");
         when(appointmentService.findById(any())).thenReturn(appointmentId);
 
-        final var treatmentEntity = TreatmentEntity.with(treatmentEntityFromBd.getId(), "fba4fb17-1279-4787-8a3b-860e651124a3",
-            "599b7814-a7fa-458f-8ab8-a17aef6d64ae", "a0913b14-7dec-4b8c-a01e-f9f2403cdb0d", "string diagnosisi1AVc", "string prescription4IDKx",
-            "string notesX8bqa", "string outcomeDa4we", treatmentEntityFromBd.getCreatedAt(), treatmentEntityFromBd.getUpdatedAt(),
+        final var treatmentEntity = TreatmentEntity.with(treatmentEntityFromBd.getId(), "021ef436-b56c-47b3-a11c-432febbedcc9",
+            "2d5bbabd-f74a-49a9-9b02-45ee0eb7778f", "f9771df0-5a45-469a-800d-6b2bbe96c1dc", "string diagnosisaiMV3", "string prescriptionq9fsm",
+            "string notes86eqi", "string outcomeCT2WN", treatmentEntityFromBd.getCreatedAt(), treatmentEntityFromBd.getUpdatedAt(),
             treatmentEntityFromBd.getDeletedAt());
         when(repository.save(any())).thenReturn(treatmentEntity);
 
@@ -102,8 +102,8 @@ public class TreatmentServiceTest {
     public void shouldNotUpdateTreatmentEntityWhenTreatmentEntityNotExists() {
         when(repository.findById(any())).thenReturn(Optional.empty());
 
-        final var treatmentEntity = TreatmentEntity.create("957a0724-e9b3-4f51-acb0-08b8a0f87504", "44f10609-f207-453b-ae14-c62edad9891b",
-            "52708d44-dae6-4a33-b969-e7e9c4442b78", "string diagnosisWn4Iz", "string prescriptionDQ4Lk", "string notes5Z425", "string outcome03cjw");
+        final var treatmentEntity = TreatmentEntity.create("ba6b738d-c3d4-452f-89ad-f7f2a43e1c20", "d1d425ef-b32b-4ee4-bab3-2b866b824be5",
+            "80ff200e-fa36-46ab-a61a-257a9309a300", "string diagnosiskgM5v", "string prescription4PxrF", "string notesmW99h", "string outcome80Qmk");
         final var expectedException = Assertions.assertThrows(NotFoundException.class,
             () -> service.update(treatmentEntity.getId(), treatmentEntity));
 
@@ -118,8 +118,8 @@ public class TreatmentServiceTest {
 
     @Test
     public void shouldGetById() {
-        final var treatmentEntityFromBd = TreatmentEntity.create("19114745-5a9a-40a5-91a9-a73551240f86", "006a8031-197f-4f7b-b59c-8cddc6b329a7",
-            "1e4483d9-4c62-4895-a91b-1fec82aee9a8", "string diagnosisn5Nka", "string prescriptionTOxVE", "string notesIEqee", "string outcomedxAOh");
+        final var treatmentEntityFromBd = TreatmentEntity.create("523ef386-c397-490b-b899-da024974c859", "6f960cda-c72c-47cf-9500-073e74204618",
+            "7ab0ba31-51df-4f8d-ba94-e020f73507a5", "string diagnosisDdfV5", "string prescriptionP2SHV", "string notescksVs", "string outcomeJ49Lp");
         when(repository.findById(any())).thenReturn(Optional.of(treatmentEntityFromBd));
 
         final var result = service.findById("id");
@@ -131,8 +131,8 @@ public class TreatmentServiceTest {
 
     @Test
     public void shouldGetByIds() {
-        final var treatmentEntityFromBd = TreatmentEntity.create("27441253-abf5-45cb-a73b-7d06c625d6a5", "e9271862-daa4-4122-af1f-a9118d9e084d",
-            "75f91ca4-8015-4d15-aac9-9c3de46663be", "string diagnosis1nw99", "string prescriptionzD3bE", "string notes0NGbO", "string outcomeEKLou");
+        final var treatmentEntityFromBd = TreatmentEntity.create("9a95dbe7-22c2-4606-9b91-24ee0f40622a", "9498737a-e886-427c-9afd-b245db5ab74a",
+            "b36cd7f6-b638-4bd7-bdd2-3aef319de61e", "string diagnosis5KM0x", "string prescriptionWNfHF", "string notes339Na", "string outcomeDMB8K");
         when(repository.findAllById(any())).thenReturn(List.of(treatmentEntityFromBd));
 
         final var resultList = service.findByIds(List.of("id"));
@@ -144,8 +144,8 @@ public class TreatmentServiceTest {
 
     @Test
     public void shouldDelete() {
-        final var treatmentEntityFromBd = TreatmentEntity.create("f072df0d-f93a-4a71-b7e9-08433ed742ff", "d9a9580c-61bf-41e7-883e-9e5f89d71a21",
-            "8c0b6744-e8ec-468c-bc03-a98160fa3219", "string diagnosisZxJz3", "string prescription2ax01", "string notesrb8nB", "string outcomesdPt0");
+        final var treatmentEntityFromBd = TreatmentEntity.create("a7317f67-ee03-461f-b980-e95714cd232f", "996dcf0c-5588-421e-9966-8afd84d8bac9",
+            "a3602ba0-4bce-4260-bc3a-c42bf4afc386", "string diagnosisB0PUQ", "string prescriptioncQ4ae", "string notesXFA0U", "string outcomemMgB1");
         when(repository.findById(any())).thenReturn(Optional.of(treatmentEntityFromBd));
         when(repository.save(any())).thenReturn(treatmentEntityFromBd);
 
@@ -161,8 +161,8 @@ public class TreatmentServiceTest {
         final var page = Pageable.unpaged();
         final var filter = new TreatmentFilter();
 
-        final var treatmentEntityFromBd = TreatmentEntity.create("2d4d2101-28a6-46ff-9154-abd7885f5707", "cb4546cb-611d-4031-997c-06b22a300b81",
-            "7dc4cb68-def9-4e92-8404-8a2c0fefa40a", "string diagnosiswOFdh", "string prescriptionBflSJ", "string notesNvb4U", "string outcomeP7neu");
+        final var treatmentEntityFromBd = TreatmentEntity.create("bed3168e-4bcc-4539-ae1e-efd3163c7bf7", "ff38b7d8-b1c7-458b-a503-f779c163a27f",
+            "1901bc70-858d-410f-854f-4282bdb22d85", "string diagnosiswqKd9", "string prescriptionApBk0", "string notesa2x0R", "string outcome9jtHC");
         final var expectedPage = new PageImpl<>(List.of(treatmentEntityFromBd), page, 1);
 
         when(repository.findAll(any(Specification.class), any(Pageable.class))).thenReturn(expectedPage);

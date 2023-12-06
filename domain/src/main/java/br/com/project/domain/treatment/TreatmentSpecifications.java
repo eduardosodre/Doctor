@@ -7,7 +7,7 @@ import org.springframework.data.jpa.domain.Specification;
 
 @UtilityClass
 public class TreatmentSpecifications {
- 
+
     public static Specification<TreatmentEntity> filter(TreatmentFilter filter) {
         final var queryList = new ArrayList<Specification<TreatmentEntity>>();
 

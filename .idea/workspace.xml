@@ -4,7 +4,82 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2208e4c0-c1be-4844-b07f-a3b4d3a84e0d" name="Changes" comment="" />
+    <list default="true" id="2208e4c0-c1be-4844-b07f-a3b4d3a84e0d" name="Changes" comment="Create unit tests to api">
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/ControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/appointment/AppointmentControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/appointment/AppointmentFilterRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/appointment/AppointmentRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/appointment/AppointmentResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/doctor/DoctorControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/doctor/DoctorFilterRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/doctor/DoctorRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/doctor/DoctorResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/patient/PatientControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/patient/PatientFilterRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/patient/PatientRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/patient/PatientResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/patientaddress/PatientAddressRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/patientaddress/PatientAddressResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/patientemail/PatientEmailRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/patientemail/PatientEmailResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/patientphone/PatientPhoneRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/patientphone/PatientPhoneResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/treatment/TreatmentControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/treatment/TreatmentFilterRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/treatment/TreatmentRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/br/com/project/api/v1/treatment/TreatmentResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/appointment/AppointmentSpecificationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/doctor/DoctorSpecificationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patient/PatientSpecificationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/treatment/TreatmentSpecificationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/appointment/AppointmentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/appointment/AppointmentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/appointment/AppointmentResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/appointment/AppointmentResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/doctor/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/doctor/DoctorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/doctor/DoctorFilterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/doctor/DoctorFilterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/doctor/DoctorRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/doctor/DoctorRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/doctor/DoctorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/doctor/DoctorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/patient/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/patient/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/treatment/TreatmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/br/com/project/api/v1/treatment/TreatmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/PersistenceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/PersistenceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/appointment/AppointmentFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/appointment/AppointmentFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/appointment/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/appointment/AppointmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/appointment/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/appointment/AppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/appointment/AppointmentSpecifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/appointment/AppointmentSpecifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/doctor/DoctorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/doctor/DoctorFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/doctor/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/doctor/DoctorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patient/PatientFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patient/PatientFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientaddress/PatientAddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientaddress/PatientAddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientemail/PatientEmailEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientemail/PatientEmailEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientemail/PatientEmailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientemail/PatientEmailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientemail/PatientEmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientemail/PatientEmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientphone/PatientPhoneEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientphone/PatientPhoneEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientphone/PatientPhoneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientphone/PatientPhoneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientphone/PatientPhoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/patientphone/PatientPhoneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/treatment/TreatmentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/treatment/TreatmentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/treatment/TreatmentFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/treatment/TreatmentFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/treatment/TreatmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/treatment/TreatmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/treatment/TreatmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/treatment/TreatmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/treatment/TreatmentSpecifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/treatment/TreatmentSpecifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/validation/ValidationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/validation/ValidationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/validation/Validator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/validation/handler/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/project/domain/validation/handler/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/appointment/AppointmentEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/appointment/AppointmentEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/appointment/AppointmentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/appointment/AppointmentServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/doctor/DoctorEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/doctor/DoctorEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/doctor/DoctorServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/doctor/DoctorServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patient/PatientEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patient/PatientEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patient/PatientServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patient/PatientServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patientaddress/PatientAddressEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patientaddress/PatientAddressEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patientaddress/PatientAddressServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patientaddress/PatientAddressServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patientemail/PatientEmailEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patientemail/PatientEmailEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patientemail/PatientEmailServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patientemail/PatientEmailServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patientphone/PatientPhoneEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patientphone/PatientPhoneEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patientphone/PatientPhoneServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patientphone/PatientPhoneServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/treatment/TreatmentEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/treatment/TreatmentEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/treatment/TreatmentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/treatment/TreatmentServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,11 +145,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2XIv4guNNlToWKaM2Arfo9jtEEO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -83,38 +163,26 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "jbr-17",
     "last_opened_file_path": "G:/Curso Spring/Doctor",
     "settings.editor.selected.configurable": "settings.saveactions"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.br.com.project.api.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.project.domain.Application" />
-      <module name="Doctor.api.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.project.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="br.com.project.api.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.project.api.Application" />
-      <module name="Doctor.api.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.project.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Curso Spring\Doctor\gradle\wrapper" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="br.com.project.domain.patient" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Doctor [jacocoTestReport]">
     <configuration name="Doctor [jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -159,12 +227,85 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="PatientControllerTest.shouldDeletePatientPhone" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":api:test" />
+            <option value="--tests" />
+            <option value="&quot;br.com.project.api.v1.patient.PatientControllerTest.shouldDeletePatientPhone&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="PatientRequestTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":api:test" />
+            <option value="--tests" />
+            <option value="&quot;br.com.project.api.v1.patient.PatientRequestTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="PatientRequestTest.shouldToEntity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":api:test" />
+            <option value="--tests" />
+            <option value="&quot;br.com.project.api.v1.patient.PatientRequestTest.shouldToEntity&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Doctor [jacocoTestReport]" />
         <item itemvalue="Gradle.Doctor [test]" />
-        <item itemvalue="Application.br.com.project.api.Application" />
-        <item itemvalue="Application.Application" />
+        <item itemvalue="Gradle.PatientRequestTest.shouldToEntity" />
+        <item itemvalue="Gradle.PatientRequestTest" />
+        <item itemvalue="Gradle.PatientControllerTest.shouldDeletePatientPhone" />
       </list>
     </recent_temporary>
   </component>
@@ -177,6 +318,47 @@
       <option name="presentableId" value="Default" />
       <updated>1698329223209</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1701027859619</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701027859619</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Create unit tests to api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create unit tests to api" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patient/PatientSpecificationsTest.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/domain/src/test/java/br/com/project/domain/patient/PatientSpecificationsTest.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

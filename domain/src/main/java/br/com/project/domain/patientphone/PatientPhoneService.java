@@ -11,7 +11,7 @@ public class PatientPhoneService {
 
     private static final String PATIENTPHONE_NOT_FOUND = "PatientPhone not found";
     private final PatientPhoneRepository repository;
- 
+
 
     public PatientPhoneEntity findById(final String id) {
         return repository.findById(id).orElseThrow(() -> NotFoundException.create(PATIENTPHONE_NOT_FOUND));

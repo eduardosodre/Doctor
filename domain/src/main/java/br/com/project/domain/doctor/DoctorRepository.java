@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface DoctorRepository extends JpaRepository<DoctorEntity, String>,
     JpaSpecificationExecutor<DoctorEntity> {
-
+ 
     List<DoctorEntity> findByCrm(final String crm);
 }

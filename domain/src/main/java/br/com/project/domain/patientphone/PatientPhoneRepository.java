@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PatientPhoneRepository extends JpaRepository<PatientPhoneEntity, String>,
     JpaSpecificationExecutor<PatientPhoneEntity> {
- 
+
 }

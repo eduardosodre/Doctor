@@ -11,7 +11,7 @@ public class PatientEmailService {
 
     private static final String PATIENTEMAIL_NOT_FOUND = "PatientEmail not found";
     private final PatientEmailRepository repository;
- 
+
 
     public PatientEmailEntity findById(final String id) {
         return repository.findById(id).orElseThrow(() -> NotFoundException.create(PATIENTEMAIL_NOT_FOUND));

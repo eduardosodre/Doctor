@@ -6,14 +6,14 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-
-public class DoctorEntityTest {
  
+public class DoctorEntityTest {
+
     @Test
     void shouldCreateNewDoctorEntity() {
-        final var expectedCrm = "string crmit3";
-        final var expectedName = "string nameIoSdZl";
-        final var expectedSpecialty = "string specialtyIHO";
+        final var expectedCrm = "string crmVse";
+        final var expectedName = "string namepvcwtm";
+        final var expectedSpecialty = "string specialtyO5L";
 
         final var actualDoctorEntity = DoctorEntity.create(expectedCrm, expectedName, expectedSpecialty);
         Assertions.assertNotNull(actualDoctorEntity);
@@ -28,9 +28,9 @@ public class DoctorEntityTest {
 
     @ParameterizedTest
     @CsvSource({
-        "ik,string name,string specialty,crm must be between 3 and 20 characters",
-        "string crm,bsPpm,string specialty,name must be between 6 and 200 characters",
-        "string crm,string name,kr,specialty must be between 3 and 100 characters"
+        "Gd,string name,string specialty,crm must be between 3 and 20 characters",
+        "string crm,cvnqb,string specialty,name must be between 6 and 200 characters",
+        "string crm,string name,2X,specialty must be between 3 and 100 characters"
     })
     void shouldNotCreateNewDoctorEntity(String crm,
                                         String name,
@@ -47,11 +47,11 @@ public class DoctorEntityTest {
 
     @Test
     void shouldCreateNewDoctorEntityAndUpdate() {
-        final var expectedCrm = "string crml9u";
-        final var expectedName = "string name7RbnPD";
-        final var expectedSpecialty = "string specialtyqvb";
+        final var expectedCrm = "string crmCzx";
+        final var expectedName = "string nameQL1S0e";
+        final var expectedSpecialty = "string specialtyn9J";
 
-        final var actualDoctorEntity = DoctorEntity.create("string crm9Ba", "string nameHynGCi", "string specialtypkU");
+        final var actualDoctorEntity = DoctorEntity.create("string crmQet", "string name4Owf3n", "string specialtypJ5");
         final var id = actualDoctorEntity.getId();
 
         actualDoctorEntity.update(expectedCrm, expectedName, expectedSpecialty);
@@ -68,15 +68,15 @@ public class DoctorEntityTest {
 
     @ParameterizedTest
     @CsvSource({
-        "hf,string name,string specialty,crm must be between 3 and 20 characters",
-        "string crm,9Mb1E,string specialty,name must be between 6 and 200 characters",
-        "string crm,string name,MF,specialty must be between 3 and 100 characters"
+        "9S,string name,string specialty,crm must be between 3 and 20 characters",
+        "string crm,bUtIh,string specialty,name must be between 6 and 200 characters",
+        "string crm,string name,uK,specialty must be between 3 and 100 characters"
     })
     void shouldCreateNewDoctorEntityAndNotUpdate(String crm,
                                                  String name,
                                                  String specialty,
                                                  String messageError) {
-        final var actualDoctorEntity = DoctorEntity.create("string crmdpW", "string nameAvkW9X", "string specialtyHMN");
+        final var actualDoctorEntity = DoctorEntity.create("string crmAnM", "string namerJlXqC", "string specialtyfV4");
 
         final var expectedError = Assertions.assertThrows(NotificationException.class,
             () -> actualDoctorEntity.update(crm,
@@ -91,10 +91,10 @@ public class DoctorEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string idHj7T7";
-        final var expectedCrm = "string crm4gQ";
-        final var expectedName = "string nameaxRasS";
-        final var expectedSpecialty = "string specialtylDj";
+        final var expectedId = "string idfM5us";
+        final var expectedCrm = "string crmOuj";
+        final var expectedName = "string nameDgfOkU";
+        final var expectedSpecialty = "string specialtyJRY";
 
         final var actualDoctorEntity = DoctorEntity.with(expectedId, expectedCrm, expectedName, expectedSpecialty, expectedCreated, expectedUpdated,
             expectedDeleted);
@@ -113,10 +113,10 @@ public class DoctorEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string id2KeUj";
-        final var expectedCrm = "string crmfOQ";
-        final var expectedName = "string nameR6cvJi";
-        final var expectedSpecialty = "string specialtyxJ1";
+        final var expectedId = "string idIluG2";
+        final var expectedCrm = "string crmh3G";
+        final var expectedName = "string nameeShhNR";
+        final var expectedSpecialty = "string specialtyp39";
 
         final var actualDoctorEntity = DoctorEntity.with(expectedId, expectedCrm, expectedName, expectedSpecialty, expectedCreated, expectedUpdated,
             expectedDeleted);
@@ -139,9 +139,9 @@ public class DoctorEntityTest {
 
     @Test
     void shouldCreateNewDoctorEntityAndDelete() {
-        final var expectedCrm = "string crmc7s";
-        final var expectedName = "string nameGLVTtU";
-        final var expectedSpecialty = "string specialtyccz";
+        final var expectedCrm = "string crmx1Q";
+        final var expectedName = "string nameQPfITM";
+        final var expectedSpecialty = "string specialtyR0Y";
 
         final var actualDoctorEntity = DoctorEntity.create(expectedCrm, expectedName, expectedSpecialty);
         actualDoctorEntity.delete();

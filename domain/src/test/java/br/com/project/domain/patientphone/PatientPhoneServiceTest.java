@@ -19,7 +19,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 public class PatientPhoneServiceTest {
- 
+
     @Mock
     private PatientPhoneRepository repository;
     @InjectMocks
@@ -28,8 +28,8 @@ public class PatientPhoneServiceTest {
 
     @Test
     public void shouldGetById() {
-        final var patientPhoneEntityFromBd = PatientPhoneEntity.create("string phoneAP308",
-            PatientEntity.create("string nameo9K2rm", LocalDate.now(), "string gender2UkLp"));
+        final var patientPhoneEntityFromBd = PatientPhoneEntity.create("string phoneHEJdU",
+            PatientEntity.create("string nameGDeM0c", LocalDate.now(), "string genderzyhcb"));
         when(repository.findById(any())).thenReturn(Optional.of(patientPhoneEntityFromBd));
 
         final var result = service.findById("id");
@@ -41,8 +41,8 @@ public class PatientPhoneServiceTest {
 
     @Test
     public void shouldGetByIds() {
-        final var patientPhoneEntityFromBd = PatientPhoneEntity.create("string phoneDeYc9",
-            PatientEntity.create("string nameK6SiTx", LocalDate.now(), "string genderF1nZC"));
+        final var patientPhoneEntityFromBd = PatientPhoneEntity.create("string phoneuQASG",
+            PatientEntity.create("string namejmSyIC", LocalDate.now(), "string genderPfbry"));
         when(repository.findAllById(any())).thenReturn(List.of(patientPhoneEntityFromBd));
 
         final var resultList = service.findByIds(List.of("id"));
@@ -54,8 +54,8 @@ public class PatientPhoneServiceTest {
 
     @Test
     public void shouldDelete() {
-        final var patientPhoneEntityFromBd = PatientPhoneEntity.create("string phoneDhZL3",
-            PatientEntity.create("string namepWpoPI", LocalDate.now(), "string gendermSGCw"));
+        final var patientPhoneEntityFromBd = PatientPhoneEntity.create("string phoneouetu",
+            PatientEntity.create("string nameCLymht", LocalDate.now(), "string genderwbUbB"));
         when(repository.findById(any())).thenReturn(Optional.of(patientPhoneEntityFromBd));
         doNothing().when(repository).delete(any(PatientPhoneEntity.class));
 

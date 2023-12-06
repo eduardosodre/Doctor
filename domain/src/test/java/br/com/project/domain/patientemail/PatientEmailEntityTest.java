@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class PatientEmailEntityTest {
- 
+
     @Test
     void shouldCreateNewPatientEmailEntity() {
-        final var expectedEmail = "string emailyH0cp";
-        final var expectedPatient = PatientEntity.create("string name4phR64", LocalDate.now(), "string genderOu5x8");
+        final var expectedEmail = "string emailIHhkx";
+        final var expectedPatient = PatientEntity.create("string nameNdNYda", LocalDate.now(), "string gender2ye8w");
 
         final var actualPatientEmailEntity = PatientEmailEntity.create(expectedEmail, expectedPatient);
         Assertions.assertNotNull(actualPatientEmailEntity);
@@ -25,11 +25,11 @@ public class PatientEmailEntityTest {
 
     @Test
     void shouldCreateNewPatientEmailEntityAndUpdate() {
-        final var expectedEmail = "string emailE2i26";
-        final var expectedPatient = PatientEntity.create("string nameHMtMCA", LocalDate.now(), "string gender1IhW8");
+        final var expectedEmail = "string emailrDuKh";
+        final var expectedPatient = PatientEntity.create("string nameOZaTKu", LocalDate.now(), "string gendervnwNE");
 
-        final var actualPatientEmailEntity = PatientEmailEntity.create("string email2v0KO",
-            PatientEntity.create("string name8T8wzg", LocalDate.now(), "string genderpGCBs"));
+        final var actualPatientEmailEntity = PatientEmailEntity.create("string email91efZ",
+            PatientEntity.create("string nameTSODTR", LocalDate.now(), "string genderXrdPa"));
         final var id = actualPatientEmailEntity.getId();
 
         actualPatientEmailEntity.update(expectedEmail);
@@ -47,9 +47,9 @@ public class PatientEmailEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string idEHRNs";
-        final var expectedEmail = "string emailBYLhd";
-        final var expectedPatient = PatientEntity.create("string nameps69xl", LocalDate.now(), "string genderW6WwN");
+        final var expectedId = "string idTjEe7";
+        final var expectedEmail = "string email2WxJN";
+        final var expectedPatient = PatientEntity.create("string namemVL4tl", LocalDate.now(), "string genderCY2Pu");
 
         final var actualPatientEmailEntity = PatientEmailEntity.with(expectedId, expectedEmail, expectedPatient, expectedCreated, expectedUpdated,
             expectedDeleted);
@@ -67,9 +67,9 @@ public class PatientEmailEntityTest {
         final var expectedCreated = LocalDateTime.now();
         final var expectedUpdated = LocalDateTime.now();
         final var expectedDeleted = LocalDateTime.now();
-        final var expectedId = "string idnP0eD";
-        final var expectedEmail = "string emailsfvi9";
-        final var expectedPatient = PatientEntity.create("string name9RdxkQ", LocalDate.now(), "string genderUB7mQ");
+        final var expectedId = "string idj719o";
+        final var expectedEmail = "string emailhGisk";
+        final var expectedPatient = PatientEntity.create("string named1uz3f", LocalDate.now(), "string genderQB3Ov");
 
         final var actualPatientEmailEntity = PatientEmailEntity.with(expectedId, expectedEmail, expectedPatient, expectedCreated, expectedUpdated,
             expectedDeleted);
@@ -90,8 +90,8 @@ public class PatientEmailEntityTest {
 
     @Test
     void shouldCreateNewPatientEmailEntityAndDelete() {
-        final var expectedEmail = "string emailfQYBN";
-        final var expectedPatient = PatientEntity.create("string namesWC8zr", LocalDate.now(), "string genderK4zsu");
+        final var expectedEmail = "string emailuiiiJ";
+        final var expectedPatient = PatientEntity.create("string nameebsIyV", LocalDate.now(), "string genderycKwN");
 
         final var actualPatientEmailEntity = PatientEmailEntity.create(expectedEmail, expectedPatient);
         actualPatientEmailEntity.delete();
